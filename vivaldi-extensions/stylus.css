@@ -1,0 +1,51 @@
+/* =================================================================================== */
+/* STYLUS - SCROLLBAR CSS */
+/* =================================================================================== */
+
+/* Remove scrollbars */
+::-webkit-scrollbar {
+   display: none !important;
+}
+* {
+   scrollbar-width: none !important;
+}
+
+/* =================================================================================== */
+/* STYLUS - BORDER RADIUS CSS */
+/* =================================================================================== */
+
+/* On the following domains: */
+/* youtube.com - google.com - claude.ai - github.com */
+/* Remove border radius */
+*,
+*::before,
+*::after,
+[style*="border-radius"],
+[class*="rounded"] {
+   border-radius: 0 !important;
+}
+
+/* On the following domains: youtube.com */
+/* Remove channel avatar from titles */
+.yt-lockup-view-model__avatar,
+.yt-spec-avatar-shape,
+.yt-lockup-view-model__avatar-link {
+   display: none !important;
+   width: 0 !important;
+   margin: 0 !important;
+}
+
+/* On the following domains: github.com */
+/* Set no rounded and fix position for avatar user */
+img.avatar,
+img.avatar-user,
+img[class*="avatar"] {
+   border-radius: 0 !important;
+   border: none !important;
+}
+.js-profile-editable-replace {
+   margin-top: -7.5px;
+}
+.user-status-circle-badge {
+   display: none !important;
+}
