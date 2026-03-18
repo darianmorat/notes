@@ -79,3 +79,11 @@ $ rsync -avh --progress --delete -e "ssh -p 8022" ~/Documents/music/ u0_a253@192
 # Laptop - USB
 $ rsync -avh --progress --delete ~/Documents/music/ /run/media/darianmorat/BACKUPS/music/
 ```
+
+## Clean cache automatically
+
+After installing pacman-contrib you should enable the cache cleaner:
+
+```sh
+$ sudo systemctl enable paccache.timer
+```
