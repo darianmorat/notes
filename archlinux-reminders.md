@@ -78,6 +78,7 @@ $ rsync -avh --progress --delete -e "ssh -p 8022" ~/Documents/music/ u0_a253@192
 ```sh
 # Laptop - USB
 $ rsync -avh --progress --delete ~/Documents/music/ /run/media/darianmorat/BACKUPS/music/
+$ sync # remember to sync after the first cmd, to remove USB safely
 ```
 
 ## Clean cache automatically
