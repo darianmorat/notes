@@ -22,6 +22,7 @@ fantasy: fallback for impact
 ## Extensions:
 
 AdGuard AdBlocker
+Bitwarden PM
 Dark Reader
 DeArrow
 GoFullPage
