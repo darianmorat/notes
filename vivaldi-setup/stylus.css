@@ -43,6 +43,7 @@ img.avatar-user,
 img[class*="avatar"] {
    border-radius: 0 !important;
    border: none !important;
+   box-shadow: none !important;
 }
 .js-profile-editable-replace {
    margin-top: -7.5px;
@@ -63,6 +64,9 @@ img[class*="avatar"] {
 }
 h2.f4.text-normal.tmp-mt-4.tmp-mb-3 {
    margin-top: 0 !important;
+}
+h2.f4.mb-2.text-normal {
+    margin-top: 27px !important;
 }
 
 /* URLs on the domain: duckduckgo.com */
