@@ -33,3 +33,6 @@ SponsorBlock YouTube
 Stylus
 Unhook Youtube
 Vimium C
+
+`AdGuard` - To remove cookies, signup popups enable: filters - annoyances
+`Bitwarden` - Blocked domains for BitwardenVault EnteAuth & GoogleAccounts
