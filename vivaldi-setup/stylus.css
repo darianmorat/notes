@@ -70,8 +70,9 @@ h2.f4.mb-2.text-normal {
 }
 
 /* URLs on the domain: duckduckgo.com */
-/* Remove DDG logo and feedback popup */
+/* Remove DDG logo, feedback popup and footer */
 [data-testid="header-logo"],
-[data-testid="feedback-prompt"] {
+[data-testid="feedback-prompt"],
+.footer {
    display: none !important;
 }
