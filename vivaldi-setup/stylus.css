@@ -1,7 +1,8 @@
 /* =================================================================================== */
-/* STYLUS - SCROLLBAR CSS */
+/* STYLUS - SCROLLBARS */
 /* =================================================================================== */
 
+/* Everything: */
 /* Remove scrollbars */
 ::-webkit-scrollbar {
    display: none !important;
@@ -11,11 +12,11 @@
 }
 
 /* =================================================================================== */
-/* STYLUS - BORDER RADIUS CSS */
+/* STYLUS - WEBSITES */
 /* =================================================================================== */
 
-/* On the following domains: */
-/* youtube.com - google.com - claude.ai - github.com */
+/* URLs on the domain: */
+/* youtube.com - google.com - claude.ai - github.com - duckduckgo.com */
 /* Remove border radius */
 *,
 *::before,
@@ -25,7 +26,7 @@
    border-radius: 0 !important;
 }
 
-/* On the following domains: youtube.com */
+/* URLs on the domain: youtube.com */
 /* Remove channel avatar from titles */
 .yt-lockup-view-model__avatar,
 .yt-spec-avatar-shape,
@@ -35,7 +36,7 @@
    margin: 0 !important;
 }
 
-/* On the following domains: github.com */
+/* URLs on the domain: github.com */
 /* Set no rounded and fix position for avatar user */
 img.avatar,
 img.avatar-user,
@@ -47,5 +48,26 @@ img[class*="avatar"] {
    margin-top: -7.5px;
 }
 .user-status-circle-badge {
+   display: none !important;
+}
+
+/* URLs starting with: https://github.com/darianmorat */
+/* Remove personal contributions */
+.js-yearly-contributions,
+#year-list-container { 
+   display: none !important; 
+}
+.col-lg-10 {
+   width: 100% !important;
+   max-width: 100% !important;
+}
+h2.f4.text-normal.tmp-mt-4.tmp-mb-3 {
+   margin-top: 0 !important;
+}
+
+/* URLs on the domain: duckduckgo.com */
+/* Remove DDG logo and feedback popup */
+[data-testid="header-logo"],
+[data-testid="feedback-prompt"] {
    display: none !important;
 }
