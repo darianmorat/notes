@@ -49,13 +49,6 @@ a[aria-label*="Google Account"]::after,
    box-shadow: none !important;
 }
 
-/* ChatGPT */
-div:has(> img[alt="Profile image"]),
-div.rounded-full.h-2.w-2 {
-  border-radius: 50% !important;
-  overflow: hidden !important;
-}
-
 /* =================================================================================== */
 /* URLs on the domain: youtube.com */
 /* Remove channel avatar from titles */
@@ -89,6 +82,15 @@ h2.f4.text-normal.tmp-mt-4.tmp-mb-3 {
 }
 h2.f4.mb-2.text-normal {
    margin-top: 27px !important;
+}
+
+/* =================================================================================== */
+/* URLs on the domain: chatgpt.com */
+/* Restore rounded items */
+div:has(> img[alt="Profile image"]),
+div.rounded-full.h-2.w-2 {
+  border-radius: 50% !important;
+  overflow: hidden !important;
 }
 
 /* =================================================================================== */
