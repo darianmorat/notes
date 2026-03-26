@@ -56,6 +56,7 @@ div.rounded-full.h-2.w-2 {
   overflow: hidden !important;
 }
 
+/* =================================================================================== */
 /* URLs on the domain: youtube.com */
 /* Remove channel avatar from titles */
 .yt-lockup-metadata-view-model__avatar {
@@ -64,6 +65,7 @@ div.rounded-full.h-2.w-2 {
    margin: 0 !important;
 }
 
+/* =================================================================================== */
 /* URLs on the domain: github.com */
 /* Fix avatar position & status badge */
 .js-profile-editable-replace {
@@ -89,6 +91,7 @@ h2.f4.mb-2.text-normal {
    margin-top: 27px !important;
 }
 
+/* =================================================================================== */
 /* URLs on the domain: duckduckgo.com */
 /* Remove DDG logo, feedback popup and footer */
 [data-testid="header-logo"],
