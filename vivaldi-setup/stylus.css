@@ -28,9 +28,7 @@
 
 /* URLs on the domain: youtube.com */
 /* Remove channel avatar from titles */
-.yt-lockup-view-model__avatar,
-.yt-spec-avatar-shape,
-.yt-lockup-view-model__avatar-link {
+.yt-lockup-metadata-view-model__avatar {
    display: none !important;
    width: 0 !important;
    margin: 0 !important;
