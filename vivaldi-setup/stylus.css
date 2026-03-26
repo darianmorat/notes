@@ -30,7 +30,6 @@
 [class*="avatar"],
 img.avatar,
 img.avatar-user,
-[alt="Profile image"],
 
 /* Youtube */
 .style-scope.yt-img-shadow,
@@ -44,13 +43,17 @@ img.avatar-user,
 img[src*="googleusercontent.com"],
 a[aria-label*="Google Account"]::before,
 a[aria-label*="Google Account"]::after,
-.gb_be::after,
-
-/* ChatGPT */
-.rounded-full {
+.gb_be::after {
    border-radius: 50% !important;
    border: none !important;
    box-shadow: none !important;
+}
+
+/* ChatGPT */
+div:has(> img[alt="Profile image"]),
+div.rounded-full.h-2.w-2 {
+  border-radius: 50% !important;
+  overflow: hidden !important;
 }
 
 /* URLs on the domain: youtube.com */
