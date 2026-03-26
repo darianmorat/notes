@@ -16,14 +16,41 @@
 /* =================================================================================== */
 
 /* URLs on the domain: */
-/* youtube.com - google.com - claude.ai - github.com - duckduckgo.com */
-/* Remove border radius */
+/* youtube.com - github.com - google.com - claude.ai - chatgpt.com - duckduckgo.com */
+/* No rounded borders */
 *,
 *::before,
 *::after,
 [style*="border-radius"],
 [class*="rounded"] {
    border-radius: 0 !important;
+}
+
+/* Restore rounded items */
+[class*="avatar"],
+img.avatar,
+img.avatar-user,
+[alt="Profile image"],
+
+/* Youtube */
+.style-scope.yt-img-shadow,
+
+/* Github */
+.prc-Avatar-Avatar-0xaUi,
+.TimelineItem-badge,
+.repo-language-color,
+
+/* Google */
+img[src*="googleusercontent.com"],
+a[aria-label*="Google Account"]::before,
+a[aria-label*="Google Account"]::after,
+.gb_be::after,
+
+/* ChatGPT */
+.rounded-full {
+   border-radius: 50% !important;
+   border: none !important;
+   box-shadow: none !important;
 }
 
 /* URLs on the domain: youtube.com */
@@ -35,14 +62,7 @@
 }
 
 /* URLs on the domain: github.com */
-/* Set no rounded and fix position for avatar user */
-img.avatar,
-img.avatar-user,
-img[class*="avatar"] {
-   border-radius: 0 !important;
-   border: none !important;
-   box-shadow: none !important;
-}
+/* Fix avatar position & status badge */
 .js-profile-editable-replace {
    margin-top: -7.5px;
 }
@@ -50,11 +70,10 @@ img[class*="avatar"] {
    display: none !important;
 }
 
-/* URLs starting with: https://github.com/darianmorat */
-/* Remove personal contributions */
+/* Remove contributions section */
 .js-yearly-contributions,
-#year-list-container { 
-   display: none !important; 
+#year-list-container {
+   display: none !important;
 }
 .col-lg-10 {
    width: 100% !important;
@@ -64,7 +83,7 @@ h2.f4.text-normal.tmp-mt-4.tmp-mb-3 {
    margin-top: 0 !important;
 }
 h2.f4.mb-2.text-normal {
-    margin-top: 27px !important;
+   margin-top: 27px !important;
 }
 
 /* URLs on the domain: duckduckgo.com */
