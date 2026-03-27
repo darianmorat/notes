@@ -73,12 +73,12 @@ IP changes as WiFi changes: ifconfig then check if correct `ssh -p 8022 u0_a253@
 
 ```sh
 # Laptop - Mobile
-$ rsync -avh --progress --delete -e "ssh -p 8022" ~/Documents/music/ u0_a253@192.168.XXX.X:"storage/shared/backups/music/"
+$ rsync -avn --progress --delete -e "ssh -p 8022" ~/Documents/music/ u0_a253@192.168.XXX.X:"storage/shared/backups/music/"
 ```
 
 ```sh
 # Laptop - USB
-$ rsync -avh --progress --delete ~/Documents/music/ /run/media/darianmorat/BACKUPS/music/
+$ rsync -avn --progress --delete ~/Documents/music/ /run/media/darianmorat/BACKUPS/music/
 $ sync # remember to sync after the first cmd, to remove USB safely
 ```
 
