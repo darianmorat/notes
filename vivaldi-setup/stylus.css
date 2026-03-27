@@ -40,7 +40,7 @@ img.avatar-user,
 .repo-language-color,
 
 /* Google */
-img[src*="googleusercontent.com"],
+img[src*="lh3.googleusercontent.com"],
 a[aria-label*="Google Account"]::before,
 a[aria-label*="Google Account"]::after,
 .gb_be::after {
