@@ -33,6 +33,8 @@ img.avatar-user,
 
 /* Youtube */
 .style-scope.yt-img-shadow,
+.ytp-scrubber-button,
+.ytd-creator-heart-renderer,
 
 /* Github */
 .prc-Avatar-Avatar-0xaUi,
@@ -56,6 +58,11 @@ a[aria-label*="Google Account"]::after,
    display: none !important;
    width: 0 !important;
    margin: 0 !important;
+}
+
+/* Restore rounded YT account border */
+ytd-account-item-renderer yt-img-shadow {
+   border-radius: 50% !important;
 }
 
 /* =================================================================================== */
@@ -89,8 +96,8 @@ h2.f4.mb-2.text-normal {
 /* Restore rounded items */
 div:has(> img[alt="Profile image"]),
 div.rounded-full.h-2.w-2 {
-  border-radius: 50% !important;
-  overflow: hidden !important;
+   border-radius: 50% !important;
+   overflow: hidden !important;
 }
 
 /* =================================================================================== */
