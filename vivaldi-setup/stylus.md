@@ -1,7 +1,6 @@
-/* =================================================================================== */
-/* STYLUS - SCROLLBARS */
-/* =================================================================================== */
+## STYLUS - SCROLLBARS
 
+```css
 /* Everything: */
 /* Remove scrollbars */
 ::-webkit-scrollbar {
@@ -10,11 +9,11 @@
 * {
    scrollbar-width: none !important;
 }
+```
 
-/* =================================================================================== */
-/* STYLUS - WEBSITES */
-/* =================================================================================== */
+## STYLUS - WEBSITES
 
+```css
 /* URLs on the domain: */
 /* youtube.com - github.com - google.com - claude.ai - chatgpt.com - duckduckgo.com */
 /* No rounded borders */
@@ -108,3 +107,4 @@ div.rounded-full.h-2.w-2 {
 .footer {
    display: none !important;
 }
+```
