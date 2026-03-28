@@ -68,7 +68,7 @@ $ markdow-preview
 
 ## Sync data
 
-You can use -avn instead of -avh for a dry-run and see which changes will be made beforehand   
+You can use -avn instead of -avh for a dry-run and see which changes will be made beforehand  
 IP changes as WiFi changes: ifconfig then check if correct `ssh -p 8022 u0_a253@192.168.XXX.X`
 
 ```sh
