@@ -1,4 +1,4 @@
-## STYLUS - SCROLLBARS
+## Stylus - Scrollbars
 
 ```css
 /* Everything: */
@@ -11,7 +11,7 @@
 }
 ```
 
-## STYLUS - WEBSITES
+## Stylus - Websites
 
 ```css
 /* URLs on the domain: */
