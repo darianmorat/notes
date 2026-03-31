@@ -1,3 +1,5 @@
+> General notes/reminders for system configuration
+
 ## Autologin at startup
 
 ```sh
