@@ -42,6 +42,15 @@ monitor.alsa.rules = [
 ]
 ```
 
+## Bluetooth audio not switching automatically
+
+Find device number under Sinks and replace X with that number
+
+```sh
+$ wpctl status
+$ wpctl set-default X
+```
+
 ## Don't suspend in close lid
 
 Sound was lost when closing the lid, so the workaround is never suspending the computer
@@ -94,3 +103,22 @@ $ sudo systemctl enable paccache.timer
 
 Timeout in BIOS is disabled, for showing the menu:  
 Space hold - or double type for showing the other BIOS options
+
+## Open txt files with Neovim
+
+```sh
+$ mkdir ~/.local/share/applications/
+$ nvim ~/.local/share/applications/nvim.desktop
+```
+
+Then paste the following
+
+```
+[Desktop Entry]
+Name=Neovim
+Exec=wezterm start -- nvim %F
+Terminal=false
+Type=Application
+Icon=nvim
+MimeType=text/plain;
+```
