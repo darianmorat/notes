@@ -31,7 +31,11 @@ img.avatar,
 img.avatar-user,
 
 /* Youtube */
-.style-scope.yt-img-shadow,
+.ytd-topbar-menu-button-renderer,
+.ytd-comment-simplebox-renderer img,
+.ytd-video-owner-renderer img,
+.ytd-comment-replies-renderer img,
+.ytd-comment-view-model img,
 .ytp-scrubber-button,
 .ytd-creator-heart-renderer,
 
