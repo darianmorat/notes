@@ -32,6 +32,7 @@ img.avatar-user,
 
 /* Youtube */
 .ytd-topbar-menu-button-renderer,
+.ytd-active-account-header-renderer img,
 .ytd-comment-simplebox-renderer img,
 .ytd-video-owner-renderer img,
 .ytd-comment-replies-renderer img,
@@ -45,9 +46,8 @@ img.avatar-user,
 .repo-language-color,
 
 /* Google */
-img[src*="lh3.googleusercontent.com"],
-a[aria-label*="Google Account"]::before,
-a[aria-label*="Google Account"]::after,
+[aria-label*="Google Account"] img,
+img[src*="googleusercontent.com/a/"],
 .gb_be::after {
    border-radius: 50% !important;
    border: none !important;
@@ -57,15 +57,8 @@ a[aria-label*="Google Account"]::after,
 /* =================================================================================== */
 /* URLs on the domain: youtube.com */
 /* Remove channel avatar from titles */
-.yt-lockup-metadata-view-model__avatar {
+.ytLockupMetadataViewModelAvatar {
    display: none !important;
-   width: 0 !important;
-   margin: 0 !important;
-}
-
-/* Restore rounded YT account border */
-ytd-account-item-renderer yt-img-shadow {
-   border-radius: 50% !important;
 }
 
 /* =================================================================================== */
