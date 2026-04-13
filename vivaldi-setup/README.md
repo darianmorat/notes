@@ -28,6 +28,7 @@
 - DuckDuckGo
 - GoFullPage
 - Mouse Pinch-To-Zoom
+- Proton VPN
 - Return YouTube Dislike
 - Shazam
 - SponsorBlock YouTube
@@ -35,5 +36,4 @@
 - Unhook Youtube
 - Vimium C
 
-`AdGuard` - To remove cookies, signup popups enable: filters - annoyances  
-`Bitwarden` - Blocked domains: BitwardenVault, EnteAuth, GoogleAccounts
+`AdGuard` - To remove cookies, signup popups enable: filters - annoyances
