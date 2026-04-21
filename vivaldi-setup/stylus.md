@@ -104,4 +104,11 @@ div.rounded-full.h-2.w-2 {
 .footer {
    display: none !important;
 }
+
+/* =================================================================================== */
+/* URLs on the domain: reddit.com */
+/* Remove new to reddit section */
+faceplate-tracker[source="xpromo"][action="view"][noun="right_rail_auth"] {
+   display: none !important;
+}
 ```
