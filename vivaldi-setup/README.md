@@ -22,6 +22,7 @@
 ## Extensions:
 
 - AdGuard AdBlocker
+- LanguageTool
 - Bitwarden PM
 - Dark Reader
 - DeArrow
