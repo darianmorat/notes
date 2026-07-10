@@ -26,7 +26,6 @@
 }
 
 /* Restore rounded items */
-[class*="avatar"],
 img.avatar,
 img.avatar-user,
 
@@ -39,6 +38,7 @@ img.avatar-user,
 .ytd-comment-view-model img,
 .ytp-scrubber-button,
 .ytd-creator-heart-renderer,
+.ytSpecAvatarShapeImage,
 
 /* Github */
 .prc-Avatar-Avatar-0xaUi,
@@ -59,6 +59,10 @@ img[src*="googleusercontent.com/a/"],
 /* Remove channel avatar from titles */
 .ytLockupMetadataViewModelAvatar {
    display: none !important;
+}
+
+.ytp-spinner-circle {
+   border-radius: 50% !important;
 }
 
 /* =================================================================================== */
