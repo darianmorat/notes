@@ -91,6 +91,13 @@ $ rsync -avn --progress --delete ~/Documents/music/ /run/media/darianmorat/BACKU
 $ sync # remember to sync after the first cmd, to remove USB safely
 ```
 
+You can also sync your gdrive folder with rclone (remember to use `rclone config`)
+
+```sh
+$ rclone sync ~/path/to/local/folder gdrive:folder-name/ --dry-run --progress
+$ rclone sync ~/path/to/local/folder gdrive:folder-name/ --progress
+```
+
 ## Clean cache automatically
 
 After installing pacman-contrib you should enable the cache cleaner:
