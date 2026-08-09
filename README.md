@@ -17,6 +17,8 @@ autologin-user-timeout=0
 
 ## No sound after pausing
 
+<!-- Is there any fix for this without the need of a wireplumber config file? -->
+
 Audio stops working if you play sound, pause for 5-10s, then try
 to play again. The cause is WirePlumber suspending idle ALSA nodes
 
@@ -53,8 +55,10 @@ $ wpctl set-default X
 
 ## Don't suspend in close lid
 
-Sound was lost when closing the lid, so the workaround is never suspending the computer
-we just lock and turn off the screen instead
+<!-- Find a way to suspend without losing sound, so that we can get this to defaults -->
+
+Sound was lost when closing the lid, a workaround is to never suspend the computer we just lock and
+turn off the screen instead
 
 ```sh
 $ sudo nvim /etc/systemd/logind.conf
