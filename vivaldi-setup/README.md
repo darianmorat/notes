@@ -1,7 +1,8 @@
 ## Config:
 
-- Theme: Dark Theme modified
+- Theme: My theme
 - corner rounding: disabled
+- Bg-Color: solid #1e1e1e
 
 ## Colors:
 
@@ -30,6 +31,7 @@
 - Mouse Pinch-To-Zoom
 - Proton VPN
 - Return YouTube Dislike
+- Reverso Context
 - Shazam
 - SponsorBlock YouTube
 - Stylus
