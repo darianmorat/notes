@@ -1,24 +1,24 @@
 ## Config:
 
 - Theme: My theme
-- corner rounding: 0
+- Corner rounding: 0
 - Bg-Color: solid #1e1e1e
 
 ## Colors:
 
-- background: #2c2c2c
-- foreground: #ededed
-- highlight: #556bc3
-- accent: #050505
+- Background: #2c2c2c
+- Foreground: #ededed
+- Highlight: #556bc3
+- Accent: #050505
 
 ## Fonts:
 
-- standard: inter
-- sans-serif: inter
-- serif: noto serif
-- monospaced: monospace
-- cursive: inter
-- fantasy: fallback for impact
+- Standard: Noto Sans
+- Sans-serif: Noto Sans
+- Serif: Noto Serif
+- Monospaced: Noto Sans Mono
+- Cursive: Comic Sans MS
+- Fantasy: Impact
 
 ## Extensions:
 
