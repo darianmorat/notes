@@ -1,7 +1,7 @@
 ## Config:
 
 - Theme: My theme
-- corner rounding: disabled
+- corner rounding: 0
 - Bg-Color: solid #1e1e1e
 
 ## Colors:
