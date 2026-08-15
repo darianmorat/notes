@@ -1,10 +1,44 @@
+## No sound after pausing
+
+Audio stops working if you play sound, pause for 5-10s, then try to play again. The cause is
+WirePlumber suspending idle ALSA nodes
+
+Fix: disable suspension timeout in WirePlumber config
+
+```
+mkdir -p ~/.config/wireplumber/wireplumber.conf.d
+nvim ~/.config/wireplumber/wireplumber.conf.d/51-disable-suspension.conf
+```
+
+```
+monitor.alsa.rules = [
+   {
+      matches = [
+         { node.name = "~alsa_output.*" }
+      ]
+      actions = {
+         update-props = {
+            session.suspend-timeout-seconds = 0
+         }
+      }
+   }
+]
+```
+
+## Bluetooth audio not switching automatically
+
+Find device number under Sinks and replace X with that number
+
+```
+wpctl status
+wpctl set-default X
+```
+
 # Fix: Speakers silent after suspend/resume (auto)
 
 Speakers go silent after suspend (manual or lid-close). Fixed automatically via a systemd resume service
 
-## Files
-
-**`~/.local/bin/fix-audio.sh`**
+`~/.local/bin/fix-audio.sh`
 
 ```
 #!/bin/sh
@@ -20,13 +54,13 @@ sudo amixer -c0 sset Headphone on
 chmod +x ~/.local/bin/fix-audio.sh
 ```
 
-**`/etc/sudoers.d/audio-fix`**
+`/etc/sudoers.d/audio-fix`
 
 ```
 darianmorat ALL=(ALL) NOPASSWD: /usr/bin/alsaucm, /usr/bin/amixer
 ```
 
-**`/etc/systemd/system/user-resume-audio.service`**
+`/etc/systemd/system/user-resume-audio.service`
 
 ```
 [Unit]
@@ -42,8 +76,6 @@ ExecStart=/home/darianmorat/.local/bin/fix-audio.sh
 [Install]
 WantedBy=suspend.target hibernate.target
 ```
-
-## Enable
 
 ```
 sudo systemctl daemon-reload
