@@ -71,7 +71,6 @@ After=suspend.target hibernate.target
 Type=oneshot
 User=darianmorat
 Environment=XDG_RUNTIME_DIR=/run/user/1000
-Environment=DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1000/bus
 ExecStart=/home/darianmorat/.local/bin/fix-audio.sh
 
 [Install]
