@@ -1,14 +1,9 @@
 ## No sound after pausing
 
 Audio stops working if you play sound, pause for 5-10s, then try to play again. The cause is
-WirePlumber suspending idle ALSA nodes
+WirePlumber suspending idle ALSA nodes. Fixed disabling suspension timeout in WirePlumber config
 
-Fix: disable suspension timeout in WirePlumber config
-
-```
-mkdir -p ~/.config/wireplumber/wireplumber.conf.d
-nvim ~/.config/wireplumber/wireplumber.conf.d/51-disable-suspension.conf
-```
+`~/.config/wireplumber/wireplumber.conf.d/51-disable-suspension.conf`
 
 ```
 monitor.alsa.rules = [
@@ -25,16 +20,7 @@ monitor.alsa.rules = [
 ]
 ```
 
-## Bluetooth audio not switching automatically
-
-Find device number under Sinks and replace X with that number
-
-```
-wpctl status
-wpctl set-default X
-```
-
-# Fix: Speakers silent after suspend/resume (auto)
+## Fix: Speakers silent after suspend/resume (auto)
 
 Speakers go silent after suspend (manual or lid-close). Fixed automatically via a systemd resume service
 
@@ -80,4 +66,13 @@ WantedBy=suspend.target hibernate.target
 ```
 sudo systemctl daemon-reload
 sudo systemctl enable user-resume-audio.service
+```
+
+## Bluetooth audio not switching automatically
+
+Find device number under Sinks and replace X with that number
+
+```
+wpctl status
+wpctl set-default X
 ```
