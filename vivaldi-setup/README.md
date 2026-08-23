@@ -6,7 +6,7 @@
 
 ## Colors:
 
-- Background: #2c2c2c
+- Background: #252525
 - Foreground: #ededed
 - Highlight: #556bc3
 - Accent: #050505
