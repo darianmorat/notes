@@ -22,6 +22,11 @@ monitor.alsa.rules = [
 
 ## Speakers silent after suspend/resume (CURRENT ISSUE)
 
+<!-- What about this?: ~/.local/bin/fix-audio.sh -->
+<!-- #!/bin/sh -->
+<!-- sudo amixer -c0 sset Speaker off -->
+<!-- sudo amixer -c0 sset Headphone on -->
+
 This fix is not working after a suspend from xautolock and sound needs to be playing for it to
 work the temporary solution is using the `sound-fix` cmd from `.zshrc` for now. We know the problem
 is within that scope, so keep these notes for future reference with more time to fix it:
