@@ -75,8 +75,6 @@ i3-msg -t get_workspaces | jq '.[] | select(.focused) | .rect'
 
 `~/.local/share/applications/wifi-popup.desktop`
 
-> Rofi entries
-
 ```
 [Desktop Entry]
 Name=WiFi
