@@ -1,6 +1,6 @@
 > These are old vscode configurations. I no longer use them, but you never know :)
 
-## VSCode Setup: t
+## VSCode Setup:
 
 - [VSCode](https://github.com/microsoft/vscode) - code editor (v1.91.1)
 - Extensions ➜
