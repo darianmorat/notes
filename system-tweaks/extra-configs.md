@@ -35,6 +35,21 @@ Icon=nvim
 MimeType=text/plain;
 ```
 
+## Add description to Seanime
+
+`~/.local/share/applications/seanime-denshi.desktop`
+
+```
+[Desktop Entry]
+Name=Seanime Denshi
+Exec=/usr/bin/seanime-denshi
+Icon=seanime-denshi
+Comment=Anime & manga media server
+Type=Application
+Categories=Network;Video;
+Terminal=false
+```
+
 ## BIOS config
 
 Timeout in BIOS is disabled, for showing the menu:  
