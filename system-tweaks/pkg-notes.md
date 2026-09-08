@@ -3,6 +3,20 @@
 - https://www.npmjs.com/package/live-server
 - https://www.npmjs.com/package/@mryhryki/markdown-preview
 
+## Safeeyes tweaks
+
+Settings:
+
+- Strick break [enabled]
+
+Plugins:
+
+- Tray icon [disabled]
+- Smart pause `Set to 10s`
+- Screensaver [disabled]
+- Health statistics [disabled]
+- Limit consecutive skipping [disabled]
+
 ## Sync devices
 
 You can use -avn instead of -avh for a dry-run and see which changes will be made beforehand  
