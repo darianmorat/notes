@@ -20,32 +20,15 @@ monitor.alsa.rules = [
 ]
 ```
 
-## Speakers silent after suspend/resume (CURRENT ISSUE)
-
-<!-- What about this?: ~/.local/bin/fix-audio.sh -->
-<!-- #!/bin/sh -->
-<!-- sudo amixer -c0 sset Speaker off -->
-<!-- sudo amixer -c0 sset Headphone on -->
-
-This fix is not working after a suspend from xautolock and sound needs to be playing for it to
-work the temporary solution is using the `sound-fix` cmd from `.zshrc` for now. We know the problem
-is within that scope, so keep these notes for future reference with more time to fix it:
-
-```
-alias fix-sound-old='systemctl --user restart wireplumber; sleep 1; sudo alsaucm -c hw:sofessx8336 set _verb HiFi; sudo amixer -c0 sset Speaker off; sudo amixer -c0 sset Headphone on'
-alias fix-sound='mpv --loop=inf --no-video --really-quiet --volume=0 /usr/share/sounds/alsa/Front_Center.wav & MPV_PID=$!; sleep 1; systemctl --user restart wireplumber; sleep 2; sudo alsaucm -c hw:sofessx8336 set _verb HiFi; sudo amixer -c0 sset Speaker off; sudo amixer -c0 sset Headphone on; sleep 1; kill $MPV_PID 2>/dev/null'
-```
-
-Speakers go silent after suspend (manual or lid-close). Fixed automatically via a systemd resume
-service (or at least what I thought, keep working on this for a full fix on different scenarios)
+## Speakers silent after suspend/resume
 
 `~/.local/bin/fix-audio.sh`
 
 ```
 #!/bin/sh
-sleep 3
+timeout 4 mpv --loop=inf --no-video --really-quiet --volume=0 /usr/share/sounds/alsa/Front_Center.wav &
 systemctl --user restart wireplumber
-sleep 2
+sleep 1
 sudo alsaucm -c hw:sofessx8336 set _verb HiFi
 sudo amixer -c0 sset Speaker off
 sudo amixer -c0 sset Headphone on
