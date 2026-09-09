@@ -41,7 +41,7 @@ chmod +x ~/.local/bin/fix-audio.sh
 `/etc/sudoers.d/audio-fix`
 
 ```
-darianmorat ALL=(ALL) NOPASSWD: /usr/bin/alsaucm, /usr/bin/amixer
+USERNAME ALL=(ALL) NOPASSWD: /usr/bin/alsaucm, /usr/bin/amixer
 ```
 
 `/etc/systemd/system/user-resume-audio.service`
@@ -53,9 +53,9 @@ After=suspend.target hibernate.target
 
 [Service]
 Type=oneshot
-User=darianmorat
+User=USERNAME
 Environment=XDG_RUNTIME_DIR=/run/user/1000
-ExecStart=/home/darianmorat/.local/bin/fix-audio.sh
+ExecStart=/home/USERNAME/.local/bin/fix-audio.sh
 
 [Install]
 WantedBy=suspend.target hibernate.target

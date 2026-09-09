@@ -32,7 +32,7 @@ rsync -avn --progress --delete -e "ssh -p 8022" ~/Documents/music/ u0_a253@192.1
 > _Note: remember to sync after the first cmd, to remove USB safely_
 
 ```
-rsync -avn --progress --delete ~/Documents/music/ /run/media/darianmorat/BACKUPS/music/
+rsync -avn --progress --delete ~/Documents/music/ /run/media/USERNAME/BACKUPS/music/
 sync
 ```
 

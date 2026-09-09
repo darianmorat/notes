@@ -94,7 +94,7 @@ i3-msg -t get_workspaces | jq '.[] | select(.focused) | .rect'
 [Desktop Entry]
 Name=WiFi
 Comment=Wi-Fi network management with Impala
-Exec=/home/darianmorat/.local/bin/popup-wifi
+Exec=/home/USERNAME/.local/bin/popup-wifi
 Type=Application
 Terminal=false
 Icon=network-wireless
@@ -106,7 +106,7 @@ Icon=network-wireless
 [Desktop Entry]
 Name=Bluetooth
 Comment=Bluetooth device management with BlueTUI
-Exec=/home/darianmorat/.local/bin/popup-bluetooth
+Exec=/home/USERNAME/.local/bin/popup-bluetooth
 Type=Application
 Terminal=false
 Icon=bluetooth
