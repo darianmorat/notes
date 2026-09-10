@@ -80,3 +80,12 @@ wpctl set-default X
 I still don't really know how the issue is reproduced, but copying a file such as `init.lua` which
 contains 600+ lines 2 times in any text field (such a claude or chatgpt) makes the tab/browser to
 completely freeze, a solution sometimes is closing the whole browser or making a full reboot
+
+## Quod Libet: "No GStreamer element found" (AAC/MPEG-4)
+
+Cause: missing AAC decoder plugin for GStreamer. Just install missing pcks and then fully quit and
+relaunch Quod Libet (which forces registry rescan)
+
+```
+sudo pacman -S gst-libav gst-plugins-bad
+```
