@@ -6,10 +6,10 @@
 
 ## Colors:
 
-- Background: #252525
+- Background: #202020
 - Foreground: #ededed
 - Highlight: #556bc3
-- Accent: #050505
+- Accent: #090909
 
 ## Fonts:
 
