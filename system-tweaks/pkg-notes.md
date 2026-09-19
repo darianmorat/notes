@@ -12,7 +12,7 @@ Settings:
 Plugins:
 
 - Tray icon [disabled]
-- Smart pause `Set to 10s`
+- Smart pause `enabled`
 - Screensaver [disabled]
 - Health statistics [disabled]
 - Limit consecutive skipping [disabled]
