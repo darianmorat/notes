@@ -29,6 +29,7 @@
 - DuckDuckGo
 - GoFullPage
 - Mouse Pinch-To-Zoom
+- PDF Viewer
 - Proton VPN
 - Return YouTube Dislike
 - Reverso Context
