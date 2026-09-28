@@ -7,12 +7,12 @@
 
 Settings:
 
-- Strick break [enabled]
+- Strick break [- enabled -]
 
 Plugins:
 
 - Tray icon [disabled]
-- Smart pause `enabled`
+- Smart pause [- enabled -]
 - Screensaver [disabled]
 - Health statistics [disabled]
 - Limit consecutive skipping [disabled]
