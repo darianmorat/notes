@@ -1,13 +1,11 @@
-## Stylus - Scrollbars
+## Stylus - Scrollbar
 
 ```css
 /* Everything: */
-/* Remove scrollbars */
-::-webkit-scrollbar {
-   display: none !important;
-}
+/* Go to chrome://flags - Enable: Overlay Scrollbars */
+/* Make scrollbar thinner */
 * {
-   scrollbar-width: none !important;
+   scrollbar-width: thin;
 }
 ```
 
