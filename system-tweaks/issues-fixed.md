@@ -1,7 +1,8 @@
 ## No sound after pausing
 
-Audio stops working if you play sound, pause for 5-10s, then try to play again. The cause is
-WirePlumber suspending idle ALSA nodes. Fixed disabling suspension timeout in WirePlumber config
+Audio stops working if you play sound, pause for 5-10s, then try to play again. The
+cause is WirePlumber suspending idle ALSA nodes. Fixed disabling suspension timeout
+in WirePlumber config.
 
 `~/.config/wireplumber/wireplumber.conf.d/51-disable-suspension.conf`
 
@@ -68,24 +69,50 @@ sudo systemctl enable user-resume-audio.service
 
 ## Bluetooth audio not switching automatically
 
-Find device number under Sinks and replace X with that number
+Find device number under Sinks and replace X with that number.
 
 ```
 wpctl status
 wpctl set-default X
 ```
 
-## Vivaldi freezes after copying text
-
-I still don't really know how the issue is reproduced, but copying a file such as `init.lua` which
-contains 600+ lines 2 times in any text field (such a claude or chatgpt) makes the tab/browser to
-completely freeze, a solution sometimes is closing the whole browser or making a full reboot
-
 ## Quod Libet: "No GStreamer element found" (AAC/MPEG-4)
 
-Cause: missing AAC decoder plugin for GStreamer. Just install missing pcks and then fully quit and
-relaunch Quod Libet (which forces registry rescan)
+Cause: missing AAC decoder plugin for GStreamer. Just install missing pcks and then
+fully quit and relaunch Quod Libet (which forces registry rescan).
 
 ```
 sudo pacman -S gst-libav gst-plugins-bad
+```
+
+## Bad font rendering on website
+
+Apparently I need to have a `~/.config/fontconfig/fonts.conf` file to fix the
+Monospace/Consolas font issue on GitHub or any other website that uses Mono fonts? Do
+more research on how it works.
+
+> Is this a browser issue? check Chrome and Firefox based browsers to confirm.
+
+```
+<?xml version="1.0"?>
+<!DOCTYPE fontconfig SYSTEM "fonts.dtd">
+<fontconfig>
+   <match target="pattern">
+      <test qual="any" name="family">
+         <string>Consolas</string>
+      </test>
+      <edit name="family" mode="assign" binding="strong">
+         <string>Noto Sans Mono</string>
+      </edit>
+   </match>
+
+   <match target="pattern">
+      <test qual="any" name="family">
+         <string>ui-monospace</string>
+      </test>
+      <edit name="family" mode="assign" binding="strong">
+         <string>Noto Sans Mono</string>
+      </edit>
+   </match>
+</fontconfig>
 ```

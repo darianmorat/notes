@@ -19,34 +19,34 @@ Plugins:
 
 ## Sync devices
 
-You can add the flag `-n` for a dry-run and see which changes will be made  
-IP changes as WiFi changes: ifconfig then check if correct `ssh -p 8022 u0_a253@192.168.XXX.X`
+Laptop to Mobile:
 
-> Laptop to Mobile:
-
-```
-rsync -avn --progress --delete -e "ssh -p 8022" ~/LOCAL_PATH/ u0_a253@192.168.XXX.X:"storage/shared/backups/music/"
-```
-
-> Laptop to USB:  
-> _Note: remember to sync after the first cmd, to remove USB safely_
+> Add the `-n` flag for dry-run.
+> IP can change, so use `ifconfig` then check if its working `ssh -p 8022 u0_X@IP`.
 
 ```
-rsync -avn --progress --delete ~/LOCAL_PATH/ /run/media/USERNAME/BACKUPS/music/
+rsync -avh --progress --delete -e "ssh -p 8022" ~/LOCAL_PATH/ u0_X@IP:"storage/shared/FOLDER/"
+```
+
+Laptop to USB:
+
+> Remember to `sync` after transfer is completed, to remove USB safely.
+
+```
+rsync -avn --progress --delete ~/LOCAL_PATH/ /run/media/USERNAME/FOLDER/
 sync
 ```
 
 ## Sync GDrive
 
-Sync your device to gdrive. You can add the flag `--dry-run` to see which changed will be made
-
-> Note: remember to use `rclone config`
+> Add the `--dry-run` flag for dry-run.
+> Remember to use `rclone config` first.
 
 ```
-rclone sync ~/LOCAL_PATH/ gdrive:folder-name/ --progress
+rclone sync ~/LOCAL_PATH/ gdrive:FOLDER/ --progress
 ```
 
-You can also just track renamed or moved files and folders with:
+Just track renamed or moved files and folders with:
 
 ```
 rclone sync ~/LOCAL_PATH/ gdrive:music/ --track-renames --progress
