@@ -1,20 +1,14 @@
-<!-- EDIT THIS FILE WITH YOUR OWN WORDS LATER -->
-<!-- //////////////////////////////////////// -->
-
-<!-- VERSIONS -->
-
-<!-- Picom -->
-<!-- v13 (/srcdest/picom revision d87a5ba) -->
-
-<!-- Helium -->
-<!-- 0.19.2.1 (Official Build) (x86_64) -->
-
-<!-- Chromium -->
-<!-- 155.0.8059.39 Arch Linux -->
-
-# Helium/Chromium glitch on i3 workspace switch (picom)
+# Helium/Chromium glitch on i3 workspace switch + picom
 
 STATUS: workaround in place, not a real fix
+
+## Versions
+
+> Picom = v13 (/srcdest/picom revision d87a5ba)
+
+> Helium = 0.19.2.1 (Official Build) (x86_64)
+
+> Chromium = 155.0.8059.39 Arch Linux
 
 ## Symptom
 
@@ -38,35 +32,6 @@ STATUS: workaround in place, not a real fix
 
 ## Workaround
 
-1. Disable picom XDG autostart: ~/.config/autostart/picom.desktop with
-   Hidden=true
-2. ~/.local/bin/helium-first: kill picom (wait until it exits), start
-   helium-browser, wait for the real window (class "helium" "Helium",
-   size >= 100x100; a 10x10 helper window of the same class appears
-   first), then start picom -b. At i3 login uses a fixed 2s wait instead
-   (HELIUM_WAIT=2)
-3. i3: exec --no-startup-id env HELIUM_WAIT=2 ~/.local/bin/helium-first
-4. ~/.local/share/applications/helium.desktop: all Exec= lines call the
-   script (rofi uses it)
-
-## Caveats
-
-- picom now starts only through this script
-- Helium relaunch / launches by other apps may bypass it (Depth 32 again)
-- Depends on process name "helium" and class "helium"/"Helium"
-- ~1-2s without compositing whenever Helium cold-starts
-- Chrome not fixed yet; same approach should apply (not tested)
-
-## Still to do
-
-- Test Chrome with the same script approach
-- Report upstream (Chromium tracker; picom if it turns out relevant):
-  "Window glitches on workspace switch when browser starts under a
-  running compositor". Include both xwininfo depth outputs, chrome://gpu,
-  picom version
-
-## Code used
-
 `~/.config/autostart/picom.desktop`
 
 ```
@@ -86,22 +51,14 @@ fi
 pkill -x picom
 for i in $(seq 40); do pgrep -x picom >/dev/null || break; sleep 0.05; done
 helium-browser "$@" &
-if [ -n "$HELIUM_WAIT" ]; then
-  sleep "$HELIUM_WAIT"
-else
-  for i in $(seq 200); do
-    xwininfo -root -tree 2>/dev/null | grep '("helium" "Helium")' | grep -qE ' [0-9]{3,}x[0-9]{3,}\+' && break
-    sleep 0.05
-  done
-  sleep 0.1
-fi
+sleep 2
 pgrep -x picom >/dev/null || picom -b
 ```
 
 `~/.config/i3/config`
 
 ```
-exec --no-startup-id env HELIUM_WAIT=2 ~/.local/bin/helium-start
+exec --no-startup-id ~/.local/bin/helium-start
 ```
 
 `~/.local/share/applications/helium.desktop`
@@ -129,3 +86,14 @@ Exec=/home/darianmorat/.local/bin/helium-start
 Name=New Incognito Window
 Exec=/home/darianmorat/.local/bin/helium-start --incognito
 ```
+
+## Caveats
+
+- picom now starts only through this script
+- Helium relaunch / launches by other apps may bypass it (Depth 32 again)
+- All Chromium browsers not fixed yet; same approach should apply (not tested)
+
+## Still to do
+
+- Test other Chromium browsers with the same script approach
+- Report upstream Chromium, Picom, Hilium, etc
