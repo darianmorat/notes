@@ -55,6 +55,15 @@ STATUS: workaround in place, not a real fix
 
 ## Code used
 
+`~/.config/autostart/picom.desktop`
+
+```
+[Desktop Entry]
+Type=Application
+Name=picom
+Hidden=true
+```
+
 `~/.config/i3/config`
 
 ```
