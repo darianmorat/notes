@@ -32,8 +32,8 @@ STATUS: workaround in place, not a real fix
    helium-browser, wait for the real window (class "helium" "Helium",
    size >= 100x100; a 10x10 helper window of the same class appears
    first), then start picom -b. At i3 login uses a fixed 2s wait instead
-   (HELIUM_FIXED_WAIT=2)
-3. i3: exec --no-startup-id env HELIUM_FIXED_WAIT=2 ~/.local/bin/helium-first
+   (HELIUM_WAIT=2)
+3. i3: exec --no-startup-id env HELIUM_WAIT=2 ~/.local/bin/helium-first
 4. ~/.local/share/applications/helium.desktop: all Exec= lines call the
    script (rofi uses it)
 
@@ -58,7 +58,7 @@ STATUS: workaround in place, not a real fix
 `~/.config/i3/config`
 
 ```
-exec --no-startup-id env WAIT=2 ~/.local/bin/helium-start
+exec --no-startup-id env HELIUM_WAIT=2 ~/.local/bin/helium-start
 ```
 
 `~/.local/bin/helium-start`
@@ -71,8 +71,8 @@ fi
 pkill -x picom
 for i in $(seq 40); do pgrep -x picom >/dev/null || break; sleep 0.05; done
 helium-browser "$@" &
-if [ -n "$WAIT" ]; then
-  sleep "$WAIT"
+if [ -n "$HELIUM_WAIT" ]; then
+  sleep "$HELIUM_WAIT"
 else
   for i in $(seq 200); do
     xwininfo -root -tree 2>/dev/null | grep '("helium" "Helium")' | grep -qE ' [0-9]{3,}x[0-9]{3,}\+' && break
