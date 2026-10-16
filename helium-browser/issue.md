@@ -6,9 +6,9 @@ STATUS: workaround in place, not a real fix
 
 > Picom = v13 (/srcdest/picom revision d87a5ba)
 
-> Helium = 0.19.2.1 (Official Build) (x86_64)
+> Helium = 0.19.3.1 (Official Build) (x86_64)
 
-> Chromium = 155.0.8059.39 Arch Linux
+> Chromium = 155.0.8059.79 Arch Linux
 
 ## Symptom
 
