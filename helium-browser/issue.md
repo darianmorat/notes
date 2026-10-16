@@ -64,12 +64,6 @@ Name=picom
 Hidden=true
 ```
 
-`~/.config/i3/config`
-
-```
-exec --no-startup-id env HELIUM_WAIT=2 ~/.local/bin/helium-start
-```
-
 `~/.local/bin/helium-start`
 
 ```
@@ -90,6 +84,12 @@ else
   sleep 0.1
 fi
 pgrep -x picom >/dev/null || picom -b
+```
+
+`~/.config/i3/config`
+
+```
+exec --no-startup-id env HELIUM_WAIT=2 ~/.local/bin/helium-start
 ```
 
 `~/.local/share/applications/helium.desktop`
