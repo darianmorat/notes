@@ -61,7 +61,7 @@ STATUS: workaround in place, not a real fix
 exec --no-startup-id env WAIT=2 ~/.local/bin/helium-start
 ```
 
-`~/.local/bin/helium-first`
+`~/.local/bin/helium-start`
 
 ```
 #!/bin/sh
