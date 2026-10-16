@@ -58,7 +58,7 @@ STATUS: workaround in place, not a real fix
 `~/.config/i3/config`
 
 ```
-exec --no-startup-id env HELIUM_FIXED_WAIT=2 ~/.local/bin/helium-first
+exec --no-startup-id env WAIT=2 ~/.local/bin/helium-start
 ```
 
 `~/.local/bin/helium-first`
@@ -71,8 +71,8 @@ fi
 pkill -x picom
 for i in $(seq 40); do pgrep -x picom >/dev/null || break; sleep 0.05; done
 helium-browser "$@" &
-if [ -n "$HELIUM_FIXED_WAIT" ]; then
-  sleep "$HELIUM_FIXED_WAIT"
+if [ -n "$WAIT" ]; then
+  sleep "$WAIT"
 else
   for i in $(seq 200); do
     xwininfo -root -tree 2>/dev/null | grep '("helium" "Helium")' | grep -qE ' [0-9]{3,}x[0-9]{3,}\+' && break
@@ -91,7 +91,7 @@ Version=1.0
 Name=Helium Browser
 GenericName=Web Browser
 Comment=Access the Internet
-Exec=/home/darianmorat/.local/bin/helium-first %U
+Exec=/home/darianmorat/.local/bin/helium-start %U
 StartupNotify=true
 Terminal=false
 Icon=helium-browser
@@ -102,9 +102,9 @@ Actions=new-window;new-private-window;
 
 [Desktop Action new-window]
 Name=New Window
-Exec=/home/darianmorat/.local/bin/helium-first
+Exec=/home/darianmorat/.local/bin/helium-start
 
 [Desktop Action new-private-window]
 Name=New Incognito Window
-Exec=/home/darianmorat/.local/bin/helium-first --incognito
+Exec=/home/darianmorat/.local/bin/helium-start --incognito
 ```
