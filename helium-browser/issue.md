@@ -1,4 +1,16 @@
-<!-- Edit this file with your own words later -->
+<!-- EDIT THIS FILE WITH YOUR OWN WORDS LATER -->
+<!-- //////////////////////////////////////// -->
+
+<!-- VERSIONS -->
+
+<!-- Picom -->
+<!-- v13 (/srcdest/picom revision d87a5ba) -->
+
+<!-- Helium -->
+<!-- 0.19.2.1 (Official Build) (x86_64) -->
+
+<!-- Chromium -->
+<!-- 155.0.8059.39 Arch Linux -->
 
 # Helium/Chromium glitch on i3 workspace switch (picom)
 
