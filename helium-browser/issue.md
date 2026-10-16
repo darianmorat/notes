@@ -97,3 +97,4 @@ Exec=/home/darianmorat/.local/bin/helium-start --incognito
 
 - Test other Chromium browsers with the same script approach
 - Report upstream Chromium, Picom, Helium, etc
+- Re-test without the workaround on current versions before reporting
