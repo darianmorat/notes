@@ -1,3 +1,0 @@
-# ENGLISH LESSON
-
-### Notes:
