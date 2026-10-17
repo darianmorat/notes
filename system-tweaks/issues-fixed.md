@@ -119,8 +119,10 @@ more research on how it works.
 
 ## Screen tearing X11 (Intel)
 
+[Rerefence](https://www.siberoloji.com/how-to-fix-screen-tearing-in-xorg-on-arch-linux)
+
 Install `xf86-video-intel` (depends on your GPU; I have Intel, AMD and NVIDIA will
-differ), then create:
+differ - see "Rerefence"), then create:
 
 `/etc/X11/xorg.conf.d/20-intel.conf`
 
