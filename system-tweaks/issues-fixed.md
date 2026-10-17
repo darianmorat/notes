@@ -116,3 +116,18 @@ more research on how it works.
    </match>
 </fontconfig>
 ```
+
+## Screen tearing X11 (Intel)
+
+Install `xf86-video-intel` (depends on your GPU; I have Intel, AMD and NVIDIA will
+differ), then create:
+
+`/etc/X11/xorg.conf.d/20-intel.conf`
+
+```
+Section "Device"
+    Identifier "Intel Graphics"
+    Driver "intel"
+    Option "TearFree" "true"
+EndSection
+```
