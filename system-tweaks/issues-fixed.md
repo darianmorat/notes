@@ -122,7 +122,7 @@ more research on how it works.
 [Reference](https://wiki.archlinux.org/title/Intel_graphics)
 
 Install `xf86-video-intel` (depends on your GPU; I have Intel, AMD and NVIDIA will
-differ - see "Reference"), then create:
+differ), then create:
 
 `/etc/X11/xorg.conf.d/20-intel.conf`
 
