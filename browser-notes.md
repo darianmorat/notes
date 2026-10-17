@@ -105,7 +105,7 @@ body::after {
 }
 
 match {
-   color: #ffffff;
+   color: #FFFFFF;
    font-weight: 600 !important;
 }
 
