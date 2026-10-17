@@ -83,6 +83,7 @@ mapkey <c-e> <c-[>
 - Custom CSS UI
 
 ```
+/* #omni */
 *,
 *::before,
 *::after,
