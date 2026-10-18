@@ -101,3 +101,31 @@ Section "Device"
     Option "TearFree" "true"
 EndSection
 ```
+
+## Better browser mono-font
+
+`~/.config/fontconfig/fonts.conf`
+
+```
+<?xml version="1.0"?>
+<!DOCTYPE fontconfig SYSTEM "fonts.dtd">
+<fontconfig>
+   <match target="pattern">
+      <test qual="any" name="family">
+         <string>Consolas</string>
+      </test>
+      <edit name="family" mode="assign" binding="strong">
+         <string>Noto Sans Mono</string>
+      </edit>
+   </match>
+
+   <match target="pattern">
+      <test qual="any" name="family">
+         <string>ui-monospace</string>
+      </test>
+      <edit name="family" mode="assign" binding="strong">
+         <string>Noto Sans Mono</string>
+      </edit>
+   </match>
+</fontconfig>
+```
