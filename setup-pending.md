@@ -62,7 +62,7 @@ the other pages so u go 1, 2, 3, 4, etc...
 - mini ai - treesitter-textobjects (which one) targets.vim nvim-spider
 - lazygit vs neogit / gitui / fugitive (which one is better long term, remember
   that lazygit has no way to hide the status while fetching on toggle, so is not saving
-  your position)
+  your position - but u can use ctrl+h tho)
 
 `https://github.com/nvim-mini/mini.nvim/discussions/243`
 `https://github.com/nvim-mini/mini.nvim/blob/ff00eec0fe5e897aab3b88d3499c4eb7a8cd9ad8/doc/mini-surround.txt#L70`
