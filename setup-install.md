@@ -4,15 +4,22 @@
   `pacman -S tree-sitter-cli`
 
 - conform.nvim (formatters):
-  `pacman -S prettier stylua python-black`
-  `npm i -g @fsouza/prettierd`
+  `pacman -S prettier`
+  `pacman -S stylua`
+  `pacman -S python-black`
+  `pnpm add -g @fsouza/prettierd`
 
 - nvim-lspconfig (language servers):
-  `pacman -S eslint-language-server vscode-{html,css,json}-languageserver pyright`
-  `npm i -g @vtsls/language-server @astrojs/language-server`
+  `pacman -S eslint-language-server`
+  `pacman -S vscode-{html,css,json}-languageserver`
+  `pacman -S pyright`
+  `pnpm add -g @vtsls/language-server`
+  `pnpm add -g @astrojs/language-server`
 
-## Globals
+## CLI tools
 
-- **commitizen** - Interactive commit message tool `NPM`
-- **cz-conventional-changelog** - Conventional commit adapter `NPM`
-- **markdown-preview** - Markdown preview in browser `NPM`
+- Interactive commit messages:
+  `pnpm add -g commitizen cz-conventional-changelog`
+
+- Preview markdown in browser:
+  `pnpm add -g @mryhryki/markdown-preview`
