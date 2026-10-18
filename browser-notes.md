@@ -6,7 +6,7 @@
 - DuckDuckGo
 - GoFullPage
 - Mouse Pinch-To-Zoom
-- PDF Viewer [pending check]
+- PDF Viewer -PENDING
 - Return YouTube Dislike
 - Reverso Context
 - Shazam

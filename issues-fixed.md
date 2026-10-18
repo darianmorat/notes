@@ -85,7 +85,9 @@ fully quit and relaunch Quod Libet (which forces registry rescan).
 sudo pacman -S gst-libav gst-plugins-bad
 ```
 
-## Bad font rendering on website
+## Bad font rendering on website -PENDING
+
+> Check this, helium is a different browser. To confirm if we can remove it
 
 Apparently I need to have a `~/.config/fontconfig/fonts.conf` file to fix the
 Monospace/Consolas font issue on GitHub or any other website that uses Mono fonts? Do
@@ -133,3 +135,8 @@ Section "Device"
     Option "TearFree" "true"
 EndSection
 ```
+
+## WezTerm blank screen -PENDING
+
+It shows a small blank screen for a fraction of a second, when changing workspaces or
+opening the app, its not a big problem but I keep the comment for future Reference
