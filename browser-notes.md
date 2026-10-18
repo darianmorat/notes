@@ -6,7 +6,7 @@
 - DuckDuckGo
 - GoFullPage
 - Mouse Pinch-To-Zoom
-- PDF Viewer -PENDING
+- PDF Viewer -PENDING (makes font blurry)
 - Return YouTube Dislike
 - Reverso Context
 - Shazam
