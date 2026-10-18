@@ -110,38 +110,3 @@ Icon=bluetooth
 ```
 update-desktop-database ~/.local/share/applications/
 ```
-
-# Spotlight / Zoomer - Scripts
-
-> Copy the `~/.config/i3` setup first.
-
-`~/.local/bin/projecteur-start.sh`
-
-```
-#!/bin/sh
-PRESET="${1:-preset2}"
-rm -f "${XDG_RUNTIME_DIR:-/tmp}/projecteur-zoom"
-if pgrep -x projecteur >/dev/null; then
-    projecteur -c quit
-    while pgrep -x projecteur >/dev/null; do sleep 0.02; done
-fi
-projecteur >/dev/null 2>&1 &
-until ss -xl | grep -q Projecteur_local_socket; do sleep 0.02; done
-projecteur -c preset="$PRESET" -c spot=on
-```
-
-`~/.local/bin/projecteur-zoom.sh`
-
-```
-#!/bin/sh
-F="${XDG_RUNTIME_DIR:-/tmp}/projecteur-zoom"
-if [ "$1" = reset ]; then
-    rm -f "$F"
-    projecteur -c spot.size=32 -c zoom.factor=2
-    exit
-fi
-cur=$(cat "$F" 2>/dev/null || echo 2)
-new=$(awk -v c="$cur" -v d="$1" 'BEGIN{n=c+d; if(n<1.5)n=1.5; if(n>20)n=20; print n}')
-echo "$new" > "$F"
-projecteur -c zoom.factor="$new"
-```
