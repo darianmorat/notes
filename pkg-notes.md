@@ -1,8 +1,3 @@
-## File preview
-
-- https://www.npmjs.com/package/live-server
-- https://www.npmjs.com/package/@mryhryki/markdown-preview
-
 ## Safeeyes tweaks
 
 Settings:
