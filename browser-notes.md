@@ -1,4 +1,4 @@
-## TITLE: Extensions
+## Extensions
 
 - Bitwarden PM
 - Dark Reader
@@ -15,7 +15,7 @@
 - Unhook Youtube
 - Vimium C
 
-## TITLE: Stylus
+> Stylus - Configuration
 
 - Websites:
 
@@ -70,7 +70,7 @@ h2.f4.mb-2.text-normal {
 }
 ```
 
-## TITLE: Vimium C
+> Vimium C - Configuration
 
 - Custom Key Mappings
 
