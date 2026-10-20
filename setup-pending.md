@@ -66,6 +66,48 @@ Change the names of the colors.lua to yellow and cyan... follow the names than t
 terminal uses instead of the ones u see? (Is this a general thing? Should I even
 care? Or just leave it the way it is? Do some research before commiting to it).
 
+Thinking on a darker version for better looks on current setup:
+
+```lua
+   shibumi_dark = {
+      -- Base
+      fg = "#D6CFC4",
+      fg_light = "#E6E3DE",
+
+      none = "NONE",
+
+      line_nr = "#505050",
+      cursor_nr = "#B1AFA8",
+      punc_char = "#9D9A94",
+      border = "#5F5F5F",
+
+      blue = "#579DD4",
+      red = "#E16464",
+      green = "#72BA62",
+      pink = "#D159B6",
+      purple = "#9266DA",
+      aqua = "#00A596",
+      orange = "#D19F66",
+      grey = "#575757",
+
+      -- Background
+      bg0 = "#1b1b1b",
+      bg1 = "#202020",
+      bg2 = "#252525",
+      bg3 = "#303030",
+      bg4 = "#323232",
+      bg5 = "#373737",
+      bg6 = "#3C3C3C",
+      bg7 = "#424242",
+
+      -- Git diff
+      diff_add = "#2D3A2A",
+      diff_delete = "#3A292B",
+      diff_change = "#1C3448",
+      diff_text = "#355C7C",
+   },
+```
+
 > Plugins Check
 
 Remember to check :Tutor and :h user-manual (for user manual u type leader+e to open
