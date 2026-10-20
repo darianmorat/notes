@@ -10,6 +10,8 @@ pacman -Qdtq | sudo pacman -Rns -
 
 ## Safeeyes tweaks
 
+> Remember to install required pkgs for the plugins to work
+
 Settings:
 
 - Strick break [- enabled -]
