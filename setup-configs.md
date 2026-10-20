@@ -21,7 +21,9 @@ After installing pacman-contrib you should enable the cache cleaner:
 sudo systemctl enable paccache.timer
 ```
 
-## Open txt files with Neovim
+## App launcher entries
+
+> Open txt files with Neovim
 
 `~/.local/share/applications/nvim.desktop`
 
@@ -35,7 +37,7 @@ Icon=nvim
 MimeType=text/plain;
 ```
 
-## Add description to Seanime
+> Add description to Seanime
 
 `~/.local/share/applications/seanime-denshi.desktop`
 
@@ -50,10 +52,20 @@ Categories=Network;Video;
 Terminal=false
 ```
 
-## BIOS config
+> Add hyprpicker entry
 
-Timeout in BIOS is disabled, for showing the menu:  
-Space hold - or double type for showing the other BIOS options.
+`~/.local/share/applications/hyprpicker.desktop`
+
+```
+[Desktop Entry]
+Type=Application
+Name=Hyprpicker (Color Picker)
+Comment=Pick a color from the screen and copy it to clipboard
+Exec=hyprpicker -a
+Icon=color-select
+Terminal=false
+Categories=Utility;
+```
 
 ## Floating Wi-Fi/Bluetooth popups
 
@@ -107,6 +119,7 @@ Terminal=false
 Icon=bluetooth
 ```
 
-```
-update-desktop-database ~/.local/share/applications/
-```
+## BIOS config
+
+Timeout in BIOS is disabled, for showing the menu:  
+Space hold - or double type for showing the other BIOS options.
