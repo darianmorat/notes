@@ -66,7 +66,8 @@ Change the names of the colors.lua to yellow and cyan... follow the names than t
 terminal uses instead of the ones u see? (Is this a general thing? Should I even
 care? Or just leave it the way it is? Do some research before commiting to it).
 
-Thinking on a darker version for better looks on current setup:
+Thinking on a darker version for better looks on current setup (if end result is not
+as expected then just leave it as it is, simplicity is better remember):
 
 ```lua
    shibumi_dark = {
