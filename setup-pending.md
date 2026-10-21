@@ -27,10 +27,6 @@ from wezterm, so finding a faster alternative its not a crazy thing). And overal
 optimization on setup, like nvim, pretty much finding the best tools for a fast
 setup. Only thing I would say its pretty fast was my archlinux + i3wm, so confirm later
 
-> Pending #4
-
-Find a better screen locker, from the official pacman, to remove the current ugly one
-
 ## Terminal
 
 > WezTerm blank screen
