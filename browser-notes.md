@@ -75,8 +75,10 @@ h2.f4.mb-2.text-normal {
 - Custom Key Mappings
 
 ```
+map <f1> Vomnibar.activate
+map <f2> Vomnibar.activateInNewTab
+mapKey <f4> <c-[>
 map v LinkHints.activateSelect
-mapkey <c-e> <c-[>
 ```
 
 - Custom CSS UI
