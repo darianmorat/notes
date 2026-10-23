@@ -69,8 +69,6 @@ Categories=Utility;
 
 ## Floating Wi-Fi/Bluetooth popups
 
-> Copy the `~/.config/i3` setup first.
-
 `~/.local/bin/popup-wifi`
 
 ```
@@ -87,12 +85,6 @@ foot --app-id "foot-bluetui" -- bluetui
 
 ```
 chmod +x ~/.local/bin/popup-wifi ~/.local/bin/popup-bluetooth
-```
-
-Check real usable area if positioning looks off:
-
-```
-i3-msg -t get_workspaces | jq '.[] | select(.focused) | .rect'
 ```
 
 `~/.local/share/applications/wifi-popup.desktop`
