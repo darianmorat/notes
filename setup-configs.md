@@ -75,14 +75,14 @@ Categories=Utility;
 
 ```
 #!/bin/bash
-wezterm start --class "wezterm-impala" -- impala
+foot --app-id "foot-impala" -- impala
 ```
 
 `~/.local/bin/popup-bluetooth`
 
 ```
 #!/bin/bash
-wezterm start --class "wezterm-bluetui" -- bluetui
+foot --app-id "foot-bluetui" -- bluetui
 ```
 
 ```
