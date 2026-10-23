@@ -129,3 +129,10 @@ EndSection
    </match>
 </fontconfig>
 ```
+
+## Undercurls not working in foot+tmux
+
+```
+infocmp | sed '/smul=/a\ Smulx=\\E[4:%p1%dm, ' | tic -x -
+infocmp -l -x | grep Smulx
+```
