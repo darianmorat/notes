@@ -79,6 +79,8 @@ map <f1> Vomnibar.activate
 map <f2> Vomnibar.activateInNewTab
 mapKey <f4> <c-[>
 map v LinkHints.activateSelect
+
+unmap r
 ```
 
 - Custom CSS UI
