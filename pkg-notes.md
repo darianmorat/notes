@@ -46,8 +46,9 @@ sync
 
 ## Sync GDrive
 
-> Add the `--dry-run` flag for dry-run.
 > Remember to use `rclone config` first.
+> Add the `--dry-run` flag for dry-run.
+> Use `--drive-chunk-size` and `--transfers` when slow.
 
 ```
 rclone sync ~/LOCAL_PATH/ gdrive:FOLDER/ --progress
