@@ -20,25 +20,16 @@ so I have already removed zs4h and p10k, but I would like to know if my vanilla
 zsh + zsh-suggestions its actually faster, as mentioned in the post, u can use
 https://github.com/romkatv/zsh-bench for benchmarks and actually see if its faster.
 
+> Pending #4
+
+- (I think I'm mostly done here, already some good defaults but can be improved)
+
 And overall checking different tools, like a fast/compatible browser (initialization
 time and less bugs, where I think we should change vivaldi), a fast FM, nemo its good
 but has slow startup which matters to me. A fast terminal (I honestly don't use much
 from wezterm, so finding a faster alternative its not a crazy thing). And overall
 optimization on setup, like nvim, pretty much finding the best tools for a fast
 setup. Only thing I would say its pretty fast was my archlinux + i3wm, so confirm later
-
-## Terminal
-
-> WezTerm blank screen
-
-It shows a small blank screen for a fraction of a second, when changing workspaces or
-opening the app, I think is for the 32 depth from `xwininfo | grep -i depth`, so finding
-a way to make wezterm 24 instead of 32 like kitty terminal or xterm, if none of that works
-using somethig like tmux inside a terminal that has 24 bit could be a good option its not
-a big problem but I keep the comment for future Reference.
-
-Dunst notifications also show a weird black bg shadow like when using it, but its not all
-the time, but its happening after the screen tearing fix, same as wezterm lol, so yeah.
 
 ## Neovim
 
@@ -47,12 +38,8 @@ the time, but its happening after the screen tearing fix, same as wezterm lol, s
 `https://codeberg.org/mayonster/nixos-config/src/commit/46757ff3f356d06c4207afe8a18fd9f062994390/dotfiles/nvim/lua/custom/plugins/snacks.lua`
 `https://codeberg.org/mayonster/nixos-config/src/commit/46757ff3f356d06c4207afe8a18fd9f062994390/dotfiles/nvim/lua/custom/plugins/blink-icon-preview.lua`
 
-kitty terminal, but try this in wezterm, in how we can get the same img preview than
-this guy from theprimeagen discord channel show me.
-
-`https://github.com/wezterm/wezterm/issues/1951` - some extra link for reviewing later
-options with wezterm, if we don't need to change it, could be great probably - still
-open to other terminals (if faster and more responsive + from official pacman repos).
+kitty terminal, but try this in foot, in how we can get the same img preview than
+this guy from theprimeagen discord channel show me. we got sixel, so is probably viable
 
 > Shibumi.nvim
 
