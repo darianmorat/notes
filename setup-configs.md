@@ -59,7 +59,7 @@ Terminal=false
 ```
 [Desktop Entry]
 Type=Application
-Name=Hyprpicker (Color Picker)
+Name=Hyprpicker
 Comment=Pick a color from the screen and copy it to clipboard
 Exec=hyprpicker -a
 Icon=color-select
