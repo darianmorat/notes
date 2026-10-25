@@ -85,23 +85,6 @@ fully quit and relaunch Quod Libet (which forces registry rescan).
 sudo pacman -S gst-libav gst-plugins-bad
 ```
 
-## Screen tearing X11 (Intel)
-
-[Reference](https://wiki.archlinux.org/title/Intel_graphics)
-
-Install `xf86-video-intel` (depends on your GPU; I have Intel, AMD and NVIDIA will
-differ), then create:
-
-`/etc/X11/xorg.conf.d/20-intel.conf`
-
-```
-Section "Device"
-    Identifier "Intel Graphics"
-    Driver "intel"
-    Option "TearFree" "true"
-EndSection
-```
-
 ## Better browser mono-font
 
 `~/.config/fontconfig/fonts.conf`
