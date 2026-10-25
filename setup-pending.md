@@ -43,12 +43,6 @@ this guy from theprimeagen discord channel show me. we got sixel, so is probably
 
 > Shibumi.nvim
 
-Adding a bluish version, like gruvdark-vscode? Think if extending the theme to some
-more variants it's good, like blue, yellow, combined, etc. (with their respective
-light version) Could be a good idea, also a monochrome version! - also all of them
-using the same base colors, the only thing changes it's the backgrounds and in the
-monochrome version, the organization of highlights.
-
 Change the names of the colors.lua to yellow and cyan... follow the names than the
 terminal uses instead of the ones u see? (Is this a general thing? Should I even
 care? Or just leave it the way it is? Do some research before commiting to it).
