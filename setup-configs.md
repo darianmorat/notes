@@ -30,7 +30,7 @@ sudo systemctl enable paccache.timer
 ```
 [Desktop Entry]
 Name=Neovim
-Exec=wezterm start -- nvim %F
+Exec=foot nvim %F
 Terminal=false
 Type=Application
 Icon=nvim
