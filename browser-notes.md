@@ -107,7 +107,7 @@ unmap r
 
 body {
    margin: 9px auto 10px;
-   width: min(750px, calc(100vw - 40px));
+   width: min(650px, calc(100vw - 40px));
    border: 1px solid rgba(128, 128, 128, 1) !important;
 }
 
