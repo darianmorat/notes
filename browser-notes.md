@@ -94,12 +94,16 @@ unmap r
 [class*="rounded"] {
    border-radius: 0 !important;
    box-shadow: none !important;
-   font-family: "Inter Display", sans-serif !important;
+   font-family: "Inter" !important;
 }
 
 body {
    margin: 9px auto 10px;
    width: min(750px, calc(100vw - 40px));
    border: 1px solid rgba(128, 128, 128, 1) !important;
+}
+
+#input {
+   font-size: 18px !important;
 }
 ```
