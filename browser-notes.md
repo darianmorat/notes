@@ -1,3 +1,11 @@
+## Fonts
+
+- Standar font: Inter Display
+- Serif font: Noto Serif
+- Sans-serif font: Inter Display
+- Fixed-width font: Noto Sans Mono
+- Mathematical font: Noto Sans Math
+
 ## Extensions
 
 - Bitwarden PM
@@ -94,7 +102,7 @@ unmap r
 [class*="rounded"] {
    border-radius: 0 !important;
    box-shadow: none !important;
-   font-family: "Inter" !important;
+   font-family: "Inter Display" !important;
 }
 
 body {
