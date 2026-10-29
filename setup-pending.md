@@ -13,23 +13,12 @@ too many. Search online later for a better way to keep track of those without do
 double copies like I'm currently doing + a cmd to set that up faster in a new computer,
 because right now u need to copy paste every... single... file...
 
-> Pending #3
+> Pending #3 - (JUST CHECK FAST)
 
 zsh perfomance: `https://www.dribin.org/dave/blog/archives/2024/01/01/zsh-performance`
 so I have already removed zs4h and p10k, but I would like to know if my vanilla
 zsh + zsh-suggestions its actually faster, as mentioned in the post, u can use
 https://github.com/romkatv/zsh-bench for benchmarks and actually see if its faster.
-
-> Pending #4
-
-- (I think I'm mostly done here, already some good defaults but can be improved)
-
-And overall checking different tools, like a fast/compatible browser (initialization
-time and less bugs, where I think we should change vivaldi), a fast FM, nemo its good
-but has slow startup which matters to me. A fast terminal (I honestly don't use much
-from wezterm, so finding a faster alternative its not a crazy thing). And overall
-optimization on setup, like nvim, pretty much finding the best tools for a fast
-setup. Only thing I would say its pretty fast was my archlinux + i3wm, so confirm later
 
 ## Neovim
 
@@ -46,49 +35,6 @@ this guy from theprimeagen discord channel show me. we got sixel, so is probably
 Change the names of the colors.lua to yellow and cyan... follow the names than the
 terminal uses instead of the ones u see? (Is this a general thing? Should I even
 care? Or just leave it the way it is? Do some research before commiting to it).
-
-Thinking on a darker version for better looks on current setup (if end result is not
-as expected then just leave it as it is, simplicity is better remember):
-
-```lua
-   shibumi_dark = {
-      -- Base
-      fg = "#D6CFC4",
-      fg_light = "#E6E3DE",
-
-      none = "NONE",
-
-      line_nr = "#505050",
-      cursor_nr = "#B1AFA8",
-      punc_char = "#9D9A94",
-      border = "#5F5F5F",
-
-      blue = "#579DD4",
-      red = "#E16464",
-      green = "#72BA62",
-      pink = "#D159B6",
-      purple = "#9266DA",
-      aqua = "#00A596",
-      orange = "#D19F66",
-      grey = "#575757",
-
-      -- Background
-      bg0 = "#1b1b1b",
-      bg1 = "#202020",
-      bg2 = "#252525",
-      bg3 = "#303030",
-      bg4 = "#323232",
-      bg5 = "#373737",
-      bg6 = "#3C3C3C",
-      bg7 = "#424242",
-
-      -- Git diff
-      diff_add = "#2D3A2A",
-      diff_delete = "#3A292B",
-      diff_change = "#1C3448",
-      diff_text = "#355C7C",
-   },
-```
 
 > Plugins Check
 
