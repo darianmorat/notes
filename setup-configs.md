@@ -31,9 +31,10 @@ sudo systemctl enable paccache.timer
 [Desktop Entry]
 Name=Neovim
 Exec=foot nvim %F
+Icon=nvim
+Comment=Vim-based text editor
 Terminal=false
 Type=Application
-Icon=nvim
 MimeType=text/plain;
 ```
 
