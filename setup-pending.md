@@ -50,6 +50,13 @@ the other pages so u go 1, 2, 3, 4, etc...
 `https://github.com/nvim-mini/mini.nvim/discussions/243`
 `https://github.com/nvim-mini/mini.nvim/blob/ff00eec0fe5e897aab3b88d3499c4eb7a8cd9ad8/doc/mini-surround.txt#L70`
 
+> Multicursor
+
+Is there a better option to use nvim without the plugin multicursor? It has some
+issues with the register, so I would like to find a native alternative instead, for
+some things such as replace you already got some good defaults, but then for changing
+multiple instances that are not related, search more online to confirm
+
 ## Git CLI
 
 How to avoid the ugly wrap lazygit shows in the previewer when the text is longer than
