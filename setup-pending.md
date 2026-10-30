@@ -30,12 +30,6 @@ https://github.com/romkatv/zsh-bench for benchmarks and actually see if its fast
 kitty terminal, but try this in foot, in how we can get the same img preview than
 this guy from theprimeagen discord channel show me. we got sixel, so is probably viable
 
-> Shibumi.nvim
-
-Change the names of the colors.lua to yellow and cyan... follow the names than the
-terminal uses instead of the ones u see? (Is this a general thing? Should I even
-care? Or just leave it the way it is? Do some research before commiting to it).
-
 > Plugins Check
 
 Remember to check :Tutor and :h user-manual (for user manual u type leader+e to open
