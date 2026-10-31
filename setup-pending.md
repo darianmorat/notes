@@ -15,14 +15,6 @@ because right now u need to copy paste every... single... file...
 
 ## Neovim
 
-> Better IMG Preview
-
-`https://codeberg.org/mayonster/nixos-config/src/commit/46757ff3f356d06c4207afe8a18fd9f062994390/dotfiles/nvim/lua/custom/plugins/snacks.lua`
-`https://codeberg.org/mayonster/nixos-config/src/commit/46757ff3f356d06c4207afe8a18fd9f062994390/dotfiles/nvim/lua/custom/plugins/blink-icon-preview.lua`
-
-kitty terminal, but try this in foot, in how we can get the same img preview than
-this guy from theprimeagen discord channel show me. we got sixel, so is probably viable
-
 > Plugins Check
 
 Remember to check :Tutor and :h user-manual (for user manual u type leader+e to open
