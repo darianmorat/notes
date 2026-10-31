@@ -13,13 +13,6 @@ too many. Search online later for a better way to keep track of those without do
 double copies like I'm currently doing + a cmd to set that up faster in a new computer,
 because right now u need to copy paste every... single... file...
 
-> Pending #3 - (JUST CHECK FAST)
-
-zsh perfomance: `https://www.dribin.org/dave/blog/archives/2024/01/01/zsh-performance`
-so I have already removed zs4h and p10k, but I would like to know if my vanilla
-zsh + zsh-suggestions its actually faster, as mentioned in the post, u can use
-https://github.com/romkatv/zsh-bench for benchmarks and actually see if its faster.
-
 ## Neovim
 
 > Better IMG Preview
