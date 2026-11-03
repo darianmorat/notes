@@ -74,14 +74,14 @@ Categories=Utility;
 
 ```
 #!/bin/bash
-foot --app-id "foot-impala" -- impala
+foot -- impala
 ```
 
 `~/.local/bin/popup-bluetooth`
 
 ```
 #!/bin/bash
-foot --app-id "foot-bluetui" -- bluetui
+foot -- bluetui
 ```
 
 ```
