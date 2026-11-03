@@ -91,3 +91,12 @@ sudo pacman -S gst-libav gst-plugins-bad
 infocmp | sed '/smul=/a\ Smulx=\\E[4:%p1%dm, ' | tic -x -
 infocmp -l -x | grep Smulx
 ```
+
+## yt-dlp bot check / 429
+
+Only when YouTube blocks downloads. Update first (`sudo pacman -Syu`), then:
+
+```
+ytm --cookies-from-browser "chromium:$HOME/.config/net.imput.helium" "URL"
+ytv --cookies-from-browser "chromium:$HOME/.config/net.imput.helium" "URL"
+```
